@@ -1,0 +1,37 @@
+{
+  "name": "angular-express-modules",
+  "authors": [
+    "Merunas <merloxdixcontrol@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "~0.11.4",
+    "angular-ui-router": "ui-router#~0.2.15",
+    "angular-aria": "latest",
+    "angular-sanitize": "latest",
+    "angular": "~1.4.7",
+    "jquery": "~2.1.4",
+    "ng-file-upload": "~10.0.2",
+    "ng-img-crop": "latest",
+    "angular-cookies": "~1.4.8",
+    "owl.carousel": "owl-carousel2#~2.0.0-beta.3",
+    "angularUtils-disqus": "angular-utils-disqus#~0.4.0"
+  }
+}

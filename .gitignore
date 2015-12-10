@@ -1,0 +1,13 @@
+# Ignores
+\.DS_Store
+\.classpath
+\.project
+\.settings
+\.metadata/
+Servers/
+target/
+*.txt
+tutorials/
+config/
+public/views
+public/index.html

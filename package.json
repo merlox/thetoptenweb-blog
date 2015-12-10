@@ -1,0 +1,23 @@
+{
+  "name": "the-top-ten-web-material",
+  "version": "1.0.0",
+  "description": "Top ten products on the internet",
+  "main": "server.js",
+  "author": "Merunas grincalaitis",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "connect-mongo": "^0.8.2",
+    "cookie-parser": "^1.4.0",
+    "crypto": "0.0.3",
+    "express": "latest",
+    "express-session": "^1.12.1",
+    "mongoose": "latest",
+    "multer": "^1.1.0",
+    "passport": "^0.3.2",
+    "passport-facebook": "latest",
+    "passport-google-oauth": "^0.2.0",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.3",
+  }
+}
