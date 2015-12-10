@@ -27,9 +27,6 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider, $http
         },
         'sidebar': {
           templateUrl: 'views/sidebar.html'
-        },
-        'responses': {
-          templateUrl: 'views/responses.html'
         }
       },
       onEnter: function(){

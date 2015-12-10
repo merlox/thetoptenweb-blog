@@ -1,0 +1,24 @@
+<!--article-->
+<md-card layout-align="center center" class="md-whiteframe-z1">
+ <!--Loading spinner--------------------------------------------------------------->
+   <div flex="100" ng-if="thumbnailCtrl.loading" layout="row" layout-align="center center">
+     <md-progress-circular ng-show="thumbnailCtrl.loading" md-mode="indeterminate"></md-progress-circular>
+     <h3 ng-show="thumbnailCtrl.loading">Loading...</h3>
+   </div>
+
+   <md-card-header>
+     <div ng-bind-html="thumbnailCtrl.articleFound.articleTitle" ng-show="!thumbnailCtrl.adminMode"></div>
+     <input ng-model="thumbnailCtrl.articleFound.articleTitle" ng-bind="thumbnailCtrl.articleFound.articleTitle" ng-show="thumbnailCtrl.adminMode" style="width:100%; text-align:center;"/>
+   </md-card-header>
+
+   <div ng-bind-html="thumbnailCtrl.articleFound.articleBody" ng-show="!thumbnailCtrl.adminMode" style="padding:10px 50px; font-size:1.2em; height:100%;"></div>
+   <textarea ng-model="thumbnailCtrl.articleFound.articleBody" ng-bind="thumbnailCtrl.articleFound.articleBody" ng-show="thumbnailCtrl.adminMode" rows="50" style="padding:10px 50px; font-size:1.2em; width:100%; height:100% white-space: pre;" class="dont-break-out"></textarea>
+
+   <dir-disqus disqus-shortname="thetoptenweb"
+ 				disqus-identifier="{{ window.location.search; }}"
+ 				disqus-title="{{ window.location.href }}"
+ 				disqus-url="{{ window.location.href }}"
+ 				>
+ 	</dir-disqus>
+
+</md-card>

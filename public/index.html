@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="myApp" lang="es">
+  <base href="/" />
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>The top ten web blog, progreso</title>
+    <link rel="canonical" href="http://localhost:8080/">
+
+    <link rel='stylesheet' href='css/google-fonts.css'>
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="bower_components/ng-img-crop/compile/minified/ng-img-crop.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="bower_components/angular/angular.js" charset="utf-8"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js" charset="utf-8"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+    <script src="bower_components/angular-material/angular-material.js" charset="utf-8"></script>
+    <script src="bower_components/ng-file-upload/ng-file-upload-shim.js" charset="utf-8"></script>
+    <script src="bower_components/ng-file-upload/ng-file-upload.js" charset="utf-8"></script>
+    <script src="bower_components/ng-img-crop/compile/minified/ng-img-crop.js" charset="utf-8"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.min.js" charset="utf-8"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.min.js" charset="utf-8"></script>
+    <script src="bower_components/angularUtils-disqus/dirDisqus.js" charset="utf-8"></script>
+
+    <script src="js/app.js" charset="utf-8"></script>
+    <script src="js/services/Users.service.js"></script>
+    <script src="js/controllers/Thumbnail.client.controller.js"></script>
+    <script src="js/controllers/Login.client.controller.js"></script>
+  </head>
+  <body ng-controller="ThumbnailCtrl as thumbnailCtrl" layout="column" ng-cloak>
+
+    <div ui-view="mainToolbar"></div>
+
+    <md-button ng-click="thumbnailCtrl.sendEmail()">
+      Send email
+    </md-button>
+
+    <div layout="row" layout-align="center start" flex>
+      <div ui-view flex="{{thumbnailCtrl.expandFlex ? 100 : 75}}"></div>
+      <div ui-view="sidebar" flex="25" ng-if="!thumbnailCtrl.isSidebarHidden"></div>
+    </div>
+
+  </body>
+</html>

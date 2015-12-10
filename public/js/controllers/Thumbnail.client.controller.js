@@ -1,6 +1,13 @@
 app.controller('ThumbnailCtrl', function($http, Upload, $timeout, $location, $anchorScroll, $stateParams, $cookies){
   thumbnailCtrl = this;
 
+  thumbnailCtrl.sendEmail = function(){
+    $http.get('/api/sendEmail').success(function(response){
+      console.log('Ok')
+    }).catch(function(err){
+      console.log(err)
+    });
+  };
   thumbnailCtrl.getThumbnails = function(){
     thumbnailCtrl.loading=true;
     $http.get('/api/thumbnails').success(function(response){

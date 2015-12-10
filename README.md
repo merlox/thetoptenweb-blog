@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # merunas-material
 angular material with express web app personal project
 
@@ -100,6 +99,3 @@ Cuando un callback se ejecuta _sometime in the future_ osea que es asincrono, es
 **Por ello ejecutará los callbacks uno por uno tras el código síncrono principal**
 
 Los callback se crean `síncronomicamente` pero ejecutados `asíncronicamente`.
-=======
-# thetoptenweb-blog
->>>>>>> 6c5dca8f6de0953a621317e6c17d1a9c5f9842f9
